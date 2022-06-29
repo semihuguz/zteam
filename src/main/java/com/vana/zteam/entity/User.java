@@ -17,7 +17,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    @Column(name="user_id")
     private int userId;
 
     @NotNull
@@ -37,7 +37,7 @@ public class User {
     private String phone;
 
     @Column(name="crate_date")
-    private LocalDateTime releaseDate;
+    private LocalDateTime createDate;
 
 
 
